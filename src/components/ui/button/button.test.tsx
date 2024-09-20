@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Button } from '@/app/_components/button/button';
+import { Button } from '@/components/ui/button/button';
 
 test('loads and displays greeting', async () => {
   render(<Button>Text</Button>);

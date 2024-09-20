@@ -1,0 +1,57 @@
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+  :root {
+    --background: #ffffffa9;
+    --foreground: #17171781;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #ffffffa9;
+      --foreground: #17171781;
+    }
+  }
+
+  body,
+  .sbdocs,
+  .sbdocs > div {
+    color: var(--foreground) !important;
+    background: var(--background) !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+  body
+    *:not(button):not(.alert):not(svg):not(#storybook-root > *):not(
+      .sb-story > div > *
+    ) {
+    color: #ccc !important;
+  }
+
+  .docblock-argstable tr * {
+    background-color: transparent !important;
+  }
+
+  .docblock-argstable {
+    background-color: rgb(42, 50, 60);
+  }
+
+  .docblock-argstable td:last-of-type,
+  .docblock-argstable th:last-of-type {
+    display: none !important;
+  }
+
+  .sb-story > div,
+  #storybook-root {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  /* .docblock-code-toggle {
+      background-color: rgb(25, 30, 36) !important;
+      color: #eee;
+  } */
+</style>

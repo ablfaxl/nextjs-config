@@ -13,16 +13,7 @@ module.exports = {
     node: true,
   },
   root: true,
-  extends: [
-    'next',
-    'eslint:recommended',
-    'prettier',
-    'next/core-web-vitals',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'plugin:prettier/recommended',
-    'plugin:react-hooks/recommended',
-  ],
+  extends: ['next', 'eslint:recommended', 'prettier', 'next/core-web-vitals', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'plugin:prettier/recommended', 'plugin:react-hooks/recommended', 'plugin:storybook/recommended'],
   plugins: ['prettier', '@typescript-eslint', 'react', 'react-hooks'],
   rules: {
     // JavaScript rules
