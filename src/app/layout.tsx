@@ -23,7 +23,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           disableTransitionOnChange
-          themes={['light', 'dark', 'orange']}
+          themes={['light', 'dark', 'violet', 'darkViolet']}
         >
           {children}
         </ThemeProvider>
