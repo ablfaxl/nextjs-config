@@ -1,0 +1,32 @@
+name: nextjs-config
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build_dev:
+    if: github.ref == 'refs/heads/main'
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            set -e  # Exit immediately if a command exits with a non-zero status
+#            cd /root/projects/
+#            rm -rf portfolio
+# change github repo address
+#            git clone --bran1ch main git@github.com:ablfaxl/portfolio.git
+            cd portfolio
+            docker-compose -f docker-compose.yml build --no-cache
+            docker-compose -f docker-compose.yml down
+            docker-compose -f docker-compose.yml up -d
+          debug: true
