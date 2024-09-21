@@ -6,7 +6,7 @@ import {
 
 export function RecentSales() {
   return (
-    <div className="space-y-8">
+    <div className="w-full space-y-8">
       <div className="flex items-center">
         <Avatar className="h-9 w-9">
           <AvatarImage src="/avatars/01.png" alt="Avatar" />

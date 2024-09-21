@@ -50,6 +50,9 @@ dependencies:
   date-fns:
     specifier: ^4.1.0
     version: 4.1.0
+  idx:
+    specifier: ^3.0.3
+    version: 3.0.3
   input-otp:
     specifier: ^1.2.4
     version: 1.2.4(react-dom@18.3.1)(react@18.3.1)
@@ -71,6 +74,9 @@ dependencies:
   react-dom:
     specifier: ^18
     version: 18.3.1(react@18.3.1)
+  react-hook-form:
+    specifier: ^7.53.0
+    version: 7.53.0(react@18.3.1)
   recharts:
     specifier: ^2.12.7
     version: 2.12.7(react-dom@18.3.1)(react@18.3.1)
@@ -7872,6 +7878,10 @@ packages:
       postcss: 8.4.47
     dev: true
 
+  /idx@3.0.3:
+    resolution: {integrity: sha512-7F1oRdvgqH1vpiQ/GI3xYuXKrsc6GsuH51c9CZOPyJOKMbD8R6bjp16/SpuvHi8N5QOzP6EuCUPFxBa/4A16fQ==}
+    dev: false
+
   /ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: true
@@ -10185,6 +10195,15 @@ packages:
       react-dom: 18.3.1(react@18.3.1)
       react-is: 18.1.0
     dev: true
+
+  /react-hook-form@7.53.0(react@18.3.1):
+    resolution: {integrity: sha512-M1n3HhqCww6S2hxLxciEXy2oISPnAzxY7gvwVPrtlczTM/1dDadXgUxDpHMrMTblDOcm/AXtXxHwZ3jpg1mqKQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18 || ^19
+    dependencies:
+      react: 18.3.1
+    dev: false
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}

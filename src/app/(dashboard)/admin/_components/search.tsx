@@ -2,7 +2,7 @@ import { Input } from '@/components/ui/input/input';
 
 export function Search() {
   return (
-    <div>
+    <div className="hidden md:flex">
       <Input
         type="search"
         placeholder="Search..."
