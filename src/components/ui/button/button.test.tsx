@@ -8,5 +8,5 @@ test('loads and displays greeting', async () => {
 
 test('check button', async () => {
   render(<Button>Click Me</Button>);
-  expect(screen.getByText('Click Me')).toBeTruthy();
+  expect(screen.getByText('Click Me!')).toBeTruthy();
 });
